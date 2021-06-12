@@ -1,0 +1,8 @@
+testReadingList.o: testReadingList.cpp unittest.h readingList.h book.h \
+ counted.h
+mergeLists.o: mergeLists.cpp book.h counted.h readingList.h
+unittest.o: unittest.cpp unittest.h
+readingList.o: readingList.cpp readingList.h book.h counted.h
+counted.o: counted.cpp counted.h
+book.o: book.cpp book.h counted.h
+sanityCheck.o: sanityCheck.cpp readingList.h book.h counted.h
